@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		328AF1F429C256CE00B3C3E5 /* NYCOpenDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AF1F329C256CE00B3C3E5 /* NYCOpenDataAPI.swift */; };
+		328AF1F629C262EE00B3C3E5 /* SchoolDirectoryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AF1F529C262EE00B3C3E5 /* SchoolDirectoryServices.swift */; };
 		32B16B0A29C248D400A8F061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B16B0929C248D400A8F061 /* AppDelegate.swift */; };
 		32B16B0C29C248D400A8F061 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B16B0B29C248D400A8F061 /* SceneDelegate.swift */; };
 		32B16B0E29C248D400A8F061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B16B0D29C248D400A8F061 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		328AF1F329C256CE00B3C3E5 /* NYCOpenDataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCOpenDataAPI.swift; sourceTree = "<group>"; };
+		328AF1F529C262EE00B3C3E5 /* SchoolDirectoryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDirectoryServices.swift; sourceTree = "<group>"; };
 		32B16B0629C248D400A8F061 /* 20230315-SoumikBarua-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20230315-SoumikBarua-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B16B0929C248D400A8F061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B16B0B29C248D400A8F061 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		328AF1F029C2558F00B3C3E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				328AF1F329C256CE00B3C3E5 /* NYCOpenDataAPI.swift */,
+				328AF1F529C262EE00B3C3E5 /* SchoolDirectoryServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		32B16AFD29C248D400A8F061 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 		32B16B0829C248D400A8F061 /* 20230315-SoumikBarua-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				328AF1F029C2558F00B3C3E5 /* Services */,
 				32B16B0929C248D400A8F061 /* AppDelegate.swift */,
 				32B16B0B29C248D400A8F061 /* SceneDelegate.swift */,
 				32B16B0D29C248D400A8F061 /* ViewController.swift */,
@@ -257,6 +271,8 @@
 				32B16B0E29C248D400A8F061 /* ViewController.swift in Sources */,
 				32B16B0A29C248D400A8F061 /* AppDelegate.swift in Sources */,
 				32B16B0C29C248D400A8F061 /* SceneDelegate.swift in Sources */,
+				328AF1F429C256CE00B3C3E5 /* NYCOpenDataAPI.swift in Sources */,
+				328AF1F629C262EE00B3C3E5 /* SchoolDirectoryServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
