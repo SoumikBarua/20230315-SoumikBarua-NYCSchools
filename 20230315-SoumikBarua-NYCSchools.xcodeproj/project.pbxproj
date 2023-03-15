@@ -10,7 +10,6 @@
 		32B16B0A29C248D400A8F061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B16B0929C248D400A8F061 /* AppDelegate.swift */; };
 		32B16B0C29C248D400A8F061 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B16B0B29C248D400A8F061 /* SceneDelegate.swift */; };
 		32B16B0E29C248D400A8F061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B16B0D29C248D400A8F061 /* ViewController.swift */; };
-		32B16B1129C248D400A8F061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B16B0F29C248D400A8F061 /* Main.storyboard */; };
 		32B16B1329C248D500A8F061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B16B1229C248D500A8F061 /* Assets.xcassets */; };
 		32B16B1629C248D500A8F061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B16B1429C248D500A8F061 /* LaunchScreen.storyboard */; };
 		32B16B2129C248D500A8F061 /* _0230315_SoumikBarua_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B16B2029C248D500A8F061 /* _0230315_SoumikBarua_NYCSchoolsTests.swift */; };
@@ -40,7 +39,6 @@
 		32B16B0929C248D400A8F061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B16B0B29C248D400A8F061 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		32B16B0D29C248D400A8F061 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		32B16B1029C248D400A8F061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32B16B1229C248D500A8F061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32B16B1529C248D500A8F061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32B16B1729C248D500A8F061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				32B16B0929C248D400A8F061 /* AppDelegate.swift */,
 				32B16B0B29C248D400A8F061 /* SceneDelegate.swift */,
 				32B16B0D29C248D400A8F061 /* ViewController.swift */,
-				32B16B0F29C248D400A8F061 /* Main.storyboard */,
 				32B16B1229C248D500A8F061 /* Assets.xcassets */,
 				32B16B1429C248D500A8F061 /* LaunchScreen.storyboard */,
 				32B16B1729C248D500A8F061 /* Info.plist */,
@@ -233,7 +230,6 @@
 			files = (
 				32B16B1629C248D500A8F061 /* LaunchScreen.storyboard in Resources */,
 				32B16B1329C248D500A8F061 /* Assets.xcassets in Resources */,
-				32B16B1129C248D400A8F061 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		32B16B0F29C248D400A8F061 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32B16B1029C248D400A8F061 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		32B16B1429C248D500A8F061 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +432,6 @@
 				INFOPLIST_FILE = "20230315-SoumikBarua-NYCSchools/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +459,6 @@
 				INFOPLIST_FILE = "20230315-SoumikBarua-NYCSchools/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
