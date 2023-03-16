@@ -71,6 +71,9 @@ struct NYCOpenDataAPI {
         do {
             let decoder = JSONDecoder()
             let satResults = try decoder.decode([SATResult].self, from: data)
+            if satResults.isEmpty {
+                return .failure(SATResultsError.resultsUnavailableError)
+            }
             let satResult = satResults[0] // We will only receive the SAT results of one school
             return .success(satResult)
         } catch {

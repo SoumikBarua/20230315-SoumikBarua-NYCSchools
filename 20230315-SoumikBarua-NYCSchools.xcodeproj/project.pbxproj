@@ -15,6 +15,7 @@
 		328AF20929C2FAE300B3C3E5 /* SchoolDirectoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AF20829C2FAE300B3C3E5 /* SchoolDirectoryTableViewCell.swift */; };
 		328AF20B29C3154100B3C3E5 /* SATResultsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AF20A29C3154100B3C3E5 /* SATResultsServices.swift */; };
 		328AF20D29C31CBB00B3C3E5 /* SATResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AF20C29C31CBB00B3C3E5 /* SATResult.swift */; };
+		328AF20F29C328EF00B3C3E5 /* SchoolInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328AF20E29C328EF00B3C3E5 /* SchoolInfoViewController.swift */; };
 		32B16B0A29C248D400A8F061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B16B0929C248D400A8F061 /* AppDelegate.swift */; };
 		32B16B0C29C248D400A8F061 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B16B0B29C248D400A8F061 /* SceneDelegate.swift */; };
 		32B16B1329C248D500A8F061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B16B1229C248D500A8F061 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		328AF20829C2FAE300B3C3E5 /* SchoolDirectoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDirectoryTableViewCell.swift; sourceTree = "<group>"; };
 		328AF20A29C3154100B3C3E5 /* SATResultsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATResultsServices.swift; sourceTree = "<group>"; };
 		328AF20C29C31CBB00B3C3E5 /* SATResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATResult.swift; sourceTree = "<group>"; };
+		328AF20E29C328EF00B3C3E5 /* SchoolInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoViewController.swift; sourceTree = "<group>"; };
 		32B16B0629C248D400A8F061 /* 20230315-SoumikBarua-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20230315-SoumikBarua-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B16B0929C248D400A8F061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B16B0B29C248D400A8F061 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				328AF20329C2EE3000B3C3E5 /* SchoolDirectoryViewController.swift */,
+				328AF20E29C328EF00B3C3E5 /* SchoolInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				32B16B0A29C248D400A8F061 /* AppDelegate.swift in Sources */,
 				32B16B0C29C248D400A8F061 /* SceneDelegate.swift in Sources */,
 				328AF20D29C31CBB00B3C3E5 /* SATResult.swift in Sources */,
+				328AF20F29C328EF00B3C3E5 /* SchoolInfoViewController.swift in Sources */,
 				328AF1F429C256CE00B3C3E5 /* NYCOpenDataAPI.swift in Sources */,
 				328AF20729C2F83100B3C3E5 /* UIView+Ext.swift in Sources */,
 				328AF20429C2EE3000B3C3E5 /* SchoolDirectoryViewController.swift in Sources */,

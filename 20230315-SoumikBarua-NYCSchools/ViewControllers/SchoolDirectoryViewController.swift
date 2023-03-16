@@ -70,4 +70,17 @@ extension SchoolDirectoryViewController: UITableViewDataSource {
 
 extension SchoolDirectoryViewController: UITableViewDelegate {
     
+    // Based on the cell that was tapped, we navigate to the corresponding school's info screen
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let navigationController = self.navigationController {
+            let school = schools[indexPath.row]
+            let schoolInfoViewController = SchoolInfoViewController()
+            schoolInfoViewController.school = school
+            schoolInfoViewController.satResultsServices = SATResultsServices.shared
+            
+            navigationController.modalPresentationStyle = .fullScreen
+            navigationController.pushViewController(schoolInfoViewController, animated: true)
+        }
+    }
 }
