@@ -66,5 +66,16 @@ struct NYCOpenDataAPI {
             return .failure(error)
         }
     }
+    
+    static func satResult(fromJSON data: Data) -> Result<SATResult, Error> {
+        do {
+            let decoder = JSONDecoder()
+            let satResults = try decoder.decode([SATResult].self, from: data)
+            let satResult = satResults[0] // We will only receive the SAT results of one school
+            return .success(satResult)
+        } catch {
+            return .failure(error)
+        }
+    }
 }
 
