@@ -14,6 +14,7 @@ enum EndPoint: String {
     case DOEHighSchoolDirectory2018 = "vw9i-7mzq"
     case DOEHighSchoolDirectory2017 = "s3k6-pzi2"
     case DOEHighSchoolDirectory2016 = "7crd-d9xh"
+    case SATResults = "f9bf-2cp4"
 }
 
 enum ResponseType: String {
@@ -31,9 +32,12 @@ struct NYCOpenDataAPI {
     private static let baseURLString = "https://data.cityofnewyork.us/resource/"
     private static let apiKey = "" // Often accessing an API will require an API Key
     
-    // Computed property
-    static var schoolDirectoryURL: URL {
-        return nycOpenDataURL(endPoint: .DOEHighSchoolDirectory2017, parameters: nil, responseType: .JSON)
+    static func schoolDirectoryURL(query params: [String:String]? = nil) -> URL {
+        return nycOpenDataURL(endPoint: .DOEHighSchoolDirectory2017, parameters: params, responseType: .JSON)
+    }
+    
+    static func satResultsURL(query params: [String:String]? = nil) -> URL {
+        return nycOpenDataURL(endPoint: .SATResults, parameters: params, responseType: .JSON)
     }
     
     private static func nycOpenDataURL(endPoint: EndPoint, parameters: [String: String]?, responseType: ResponseType) -> URL {

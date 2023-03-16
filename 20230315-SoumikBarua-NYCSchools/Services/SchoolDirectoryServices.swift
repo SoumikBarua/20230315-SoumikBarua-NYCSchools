@@ -17,7 +17,7 @@ class SchoolDirectoryServices {
     }()
     
     func fetchSchoolDirectory(completion: @escaping (Result<[School], Error>) -> Void) {
-        let url = NYCOpenDataAPI.schoolDirectoryURL
+        let url = NYCOpenDataAPI.schoolDirectoryURL()
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request) {
             (data, response, error) in
