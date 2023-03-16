@@ -52,5 +52,15 @@ struct NYCOpenDataAPI {
         return components.url!
         
     }
+    
+    static func schools(fromJSON data: Data) -> Result<[School], Error> {
+        do {
+            let decoder = JSONDecoder()
+            let schoolArray = try decoder.decode([School].self, from: data)
+            return .success(schoolArray)
+        } catch {
+            return .failure(error)
+        }
+    }
 }
 
