@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum SATResultsError: Error {
+    case resultsUnavailableError
+}
+
 class SATResultsServices {
     
     // This class will handle the actual web service call for retrieving the SAT results
@@ -24,7 +28,10 @@ class SATResultsServices {
         let task = session.dataTask(with: request) {
             (data, response, error) in
             
-            let _ = self.processSATResultsResponse(data: data, error: error)
+            let result = self.processSATResultsResponse(data: data, error: error)
+            OperationQueue.main.addOperation {
+                completion(result)
+            }
                 
         }
         task.resume()
