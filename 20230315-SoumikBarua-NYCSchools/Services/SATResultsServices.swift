@@ -18,24 +18,22 @@ class SATResultsServices {
         return URLSession(configuration: config)
     }()
     
-    func fetchSATResults(schoolDBN: String) {
+    func fetchSATResults(schoolDBN: String, completion: @escaping (Result<SATResult, Error>) -> Void) {
         let url = NYCOpenDataAPI.satResultsURL(query: ["dbn":schoolDBN])
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request) {
             (data, response, error) in
             
-            if let jsonData = data {
-                if let jsonString = String(data: jsonData, encoding: .utf8) {
-                    print(jsonString)
-                }
-            } else if let requestError = error {
-                print("Error fetching the SAT results \(requestError)")
-            } else {
-                print("Unexpected error with the SAT results request")
-            }
+            let _ = self.processSATResultsResponse(data: data, error: error)
                 
         }
         task.resume()
         
+    }
+    
+    private func processSATResultsResponse(data: Data?, error: Error?) -> Result<SATResult, Error> {
+        guard let jsonData = data else { return .failure(error!) }
+        
+        return NYCOpenDataAPI.satResult(fromJSON: jsonData)
     }
 }
